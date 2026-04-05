@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindHack.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Kh_styles.css">
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="180x180" href="/images/Web_icon.png">
+</head>
+<body>
+    <!-- First NavBar -->
+    <nav id="Kh-fnav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img id="Kh-fnav-img" src="/images/MindHack_logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="Kh-font-Mont-Med navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="Kh-no-caret nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="d-flex">
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Products</span>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Screen</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Interview</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Engage</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ SkillUp</a>
+                                </div>
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Features</span>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ Certified Assessments</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ Plagiarism Detection</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ Real-World Questions</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ Integrations</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ AI Add-on</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="Kh-no-caret nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="d-flex">
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">What We Do</span>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Set Up Your Skills Strategy</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Showcase Your Tech Brand</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Optimize Your Hiring Process</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Mobilize Your Internal Talent</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ AI Data Services</a>
+                                </div>
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Use Cases</span>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ Remote Hiring</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ University Hiring</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="Kh-no-caret nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="d-flex">
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Learn</span>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Blog</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Roles Directory</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Resources Library</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Customer Stories</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item">→ Developer Skills Report</a>
+                                </div>
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Product Help</span>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ What's New</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ Partners</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item">✧ Support</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Human Data</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button class="Kh-trans Kh-font-Mont-Med btn btn-light" type="button">Log In</button>
+                    <button class="Kh-font-Mont-Med Kh-btn-out-cus-r btn" type="button">Request Demo</button>
+                    <button class="Kh-font-Mont-Med Kh-btn-out-cus-y btn" type="button">Create a free account</button>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- /First NavBar -->
+    <!-- Main Div -->
+    <div id="Kh-bg-mdiv" class="row">
+        <div class="col-12 col-md-5">
+            <div id="Kh-headbox1" class="d-flex">
+                <p class="Kh-color-red">Practice</p>
+                <p class="Kh-color-yel">(</p>
+                <p class="Kh-color-whi">coding_Skill</p>
+                <p class="Kh-color-yel">)</p>
+            </div>
+            <div id="Kh-headbox2" class="d-flex">
+                <p class="Kh-color-red">Become</p>
+                <p class="Kh-color-yel">(</p>
+                <p class="Kh-color-whi">new_Developer</p>
+                <p class="Kh-color-yel">)</p>
+            </div>
+            <div id="Kh-headbox3">
+                <p>
+                    We help thousands of companies hire and upskill the next generation of developers, and millions of developers to become one.
+                </p>
+            </div>
+            <div id="Kh-headbox4" class="d-flex">
+                <button type="button" class="Kh-btn-custom-r btn">Start a free trial</button>
+                <button type="button" class="Kh-btn-custom-y btn">For developers</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-7">
+            <img id="Kh-headbox-img" src="/images/Bg_MainDiv.png">
+        </div>
+    </div>
+    <!-- /Main Div -->
+    <!-- Brand -->
+    <div id="Kh-main-brand">
+        <div class="Kh-mbrand d-flex">
+            <img id="Kh-logo1" src="/images/AirBnB-BW.svg">
+            <img id="Kh-logo2" src="/images/Stripe-BW.svg">
+            <img id="Kh-logo3" src="/images/linkedin.svg">
+            <img id="Kh-logo4" src="/images/Atlassian-BW.svg">
+            <img id="Kh-logo5" src="/images/ibm.svg">
+            <img id="Kh-logo6" src="/images/Snap-color.svg">
+        </div>
+        <div id="Kh-mbrand-sp"></div>
+        <div class="Kh-mbrand d-flex">
+            <img id="Kh-logo7" src="/images/Doordash-BW.svg">
+            <img id="Kh-logo8" src="/images/adobe.svg">
+            <img id="Kh-logo9" src="/images/paypal.svg">
+            <img id="Kh-logo10" src="/images/goldmansachs.svg">
+            <img id="Kh-logo11" src="/images/Canva-BW.svg">
+        </div>
+    </div>
+    <!-- /Brand -->
+    <!-- Space BG -->
+    <img id="Kh-space-img" src="/images/Bg_Space.png">
+    <div id="Kh-space-txt-1">
+        <p class="Kh-font-Jet-Reg Kh-color-red text-center">
+            The future is human <span class="Kh-font-Jet-Bold Kh-color-yel">plus</span> AI
+        </p>
+    </div>
+    <div id="Kh-space-txt-2">
+        <p class="Kh-font-Mont-Med Kh-color-whi text-center">
+            We’ve entered a new era of software development where human and AI build together. This changes the skills you need as a developer, and the way companies engage, hire, and upskill technical talent. In short, this changes everything.
+        </p>
+    </div>
+    <div id="Kh-space-txt-3">
+        <p class="Kh-font-Mont-Med Kh-color-whi text-center">
+            We’re embracing these changes with you, and we’ve reinvented our products to meet the moment.
+        </p>
+    </div>
+    <!-- /Space BG -->
+    <!-- Encourage -->
+    <div id="Kh-Enc-title">
+        <p>The Developer <span>Skills Platform</span></p>
+    </div>
+    <div id="Kh-Enc-cont1" class="row">
+        <div class="col-12 col-md-6">
+            <div class="h-auto">
+                <p id="Kh-dash-head1">COMMUNITY</p>
+                <h3 id="Kh-benefit1">
+                    Prepare and <span class="Kh-color-red">apply_for</span><span class="Kh-color-yel">(</span>your_Dream_job<span class="Kh-color-yel">)</span>
+                </h3>
+                <p id="Kh-nd1">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                    Over 26 million developers have joined the MindHack community to certify their skills, practice interviewing, and discover relevant jobs. An AI Mock Interviewer can help you prepare, while our QuickApply agent puts your job search on autopilot.
+                    <br>
+                    <br>
+                    <a class="Kh-more">Learn more ⇒</a>
+                </p>
+                
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-end">
+            <video id="Kh-vid1" autoplay loop muted playsinline>
+                <source src="/videos/Enc_video_1.mp4">
+            </video>
+        </div>
+    </div>
+    <div id="Kh-Enc-cont2" class="row">
+        <div class="col-12 col-md-6">
+            <div class="h-auto">
+                <p id="Kh-dash-head2">ENGAGE</p>
+                <h3 id="Kh-benefit2">
+                    <span class="Kh-color-red">Showcase</span><span class="Kh-color-yel">(</span>your_Tech_brand<span class="Kh-color-yel">)</span>
+                </h3>
+                <p id="Kh-nd2">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                    Attract developers with hackathons that feature real-world challenges, and preview what it's like to work at your company. Our Al Assistant helps you set up a hackathon in minutes. Host it yourself or advertise and run a campaign through our developer community.
+                    <br>
+                    <br>
+                    <a class="Kh-more">Learn more ⇒</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-end">
+            <video id="Kh-vid2" autoplay loop muted playsinline>
+                <source src="/videos/Enc_video_2.mp4">
+            </video>
+        </div>
+    </div>
+    <div id="Kh-Enc-cont3" class="row">
+        <div class="col-12 col-md-6">
+            <div class="h-auto">
+                <p id="Kh-dash-head3">SCREEN</p>
+                <h3 id="Kh-benefit3">
+                    Take-home assessments that <span class="Kh-color-red">ensure</span><span class="Kh-color-yel">(</span>fairness_And_integrity<span class="Kh-color-yel">)</span>
+                </h3>
+                <p id="Kh-nd3">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                    Identify strong developers by administering a take-home assessment in a secure environment. Choose from a library of thousands of challenges across many roles designed by experts and validated by Industrial Psychologists for fairness.
+                    <br>
+                    <br>
+                    <a class="Kh-more">Learn more ⇒</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-end">
+            <video id="Kh-vid3" autoplay loop muted playsinline>
+                <source src="/videos/Enc_video_3.mp4">
+            </video>
+        </div>
+    </div>
+    <div id="Kh-Enc-cont4" class="row">
+        <div class="col-12 col-md-6">
+            <div class="h-auto">
+                <p id="Kh-dash-head4">INTERVIEW</p>
+                <h3 id="Kh-benefit4">
+                    Pair-programming <span class="Kh-color-red">interviews</span><span class="Kh-color-yel">(</span>on_Demand<span class="Kh-color-yel">)</span>
+                </h3>
+                <p id="Kh-nd4">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                    Get an accurate sense for what it would be like to work together by pair programming with candidates on real-world scenarios. Review code, fix bugs, build a feature, and see the result, all within an interview setting using pre-set repos or one of your own.
+                    <br>
+                    <br>
+                    <a class="Kh-more">Learn more ⇒</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-end">
+            <video id="Kh-vid4" autoplay loop muted playsinline>
+                <source src="/videos/Enc_video_4.mp4">
+            </video>
+        </div>
+    </div>
+    <div id="Kh-Enc-cont5" class="row">
+        <div class="col-12 col-md-6">
+            <div class="h-auto">
+                <p id="Kh-dash-head5">SKILLUP</p>
+                <h3 id="Kh-benefit5">
+                    <span class="Kh-color-red">Find</span><span class="Kh-color-yel">(</span>skills<span class="Kh-color-yel">)</span> inside your company
+                </h3>
+                <p id="Kh-nd5">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                    Empower developers to showcase their skills, earn certifications, and gain recognition - while helping you strengthen your organization. Our Al Tutor helps developers learn as they go, while our advanced insights help you understand the skillsets of your organization.
+                    <br>
+                    <br>
+                    <a class="Kh-more">Learn more ⇒</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-end">
+            <video id="Kh-vid5" autoplay loop muted playsinline>
+                <source src="/videos/Enc_video_5.mp4">
+            </video>
+        </div>
+    </div>
+    <!-- /Encourage -->
+    <!-- Company review -->
+    <div id="Kh-CR-title"> 
+        <p>Loved by companies of <span>all sizes and</span> developers <span>from all backgrounds</span></p>
+    </div>
+    <div id="carouselExampleCaptions" class="Kh-CR-cos carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner h-100">
+            <!-- 1 -->
+            <div class="carousel-item h-100 active">
+                <div class="carousel-caption h-100">
+                    <br>
+                    <br>
+                    <img class="Kh-CR-img" src="/images/Akamai.png">
+                    <br>
+                    <br>
+                    <br>
+                    <p>The proctoring features of MindHack have a profound impact on the candidate experience. It reassures them that their skills and potential are what truly matter to us.</p>
+                    <p><span class="Kh-color-red">K. Thomas</span> <span class="Kh-color-yel">(</span>Head of Talent Acquisition<span class="Kh-color-yel">)</span></p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="carousel-item h-100">
+                <div class="carousel-caption h-100">
+                    <br>
+                    <br>
+                    <img class="Kh-CR-img" src="/images/Atlassian.png">
+                    <br>
+                    <br>
+                    <br>
+                    <p>MindHack helped us go beyond traditional universities. We've scaled up our college hiring from zero to 200.</p>
+                    <p><span class="Kh-color-red">A. Viswanathan</span> <span class="Kh-color-yel">(</span>Head of Engineering<span class="Kh-color-yel">)</span></p>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="carousel-item h-100">
+                <div class="carousel-caption h-100">
+                    <br>
+                    <br>
+                    <img class="Kh-CR-img" src="/images/Vanguard.png">
+                    <br>
+                    <br>
+                    <br>
+                    <p>We have seen a significant reduction in the number of interviews needed in order to hire the same number of high-quality candidates.</p>
+                    <p><span class="Kh-color-red">N. Alexandro</span> <span class="Kh-color-yel">(</span>IT Director<span class="Kh-color-yel">)</span></p>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="carousel-item h-100">
+                <div class="carousel-caption h-100">
+                    <br>
+                    <br>
+                    <img class="Kh-CR-img" src="/images/UKG.png">
+                    <br>
+                    <br>
+                    <br>
+                    <p>The platform effectively replicates a real-world office environment, providing candidates with a glimpse of what they would encounter on the job.</p>
+                    <p><span class="Kh-color-red">M. Teolis</span> <span class="Kh-color-yel">(</span>Talent Acquisition Manager<span class="Kh-color-yel">)</span></p>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="carousel-item h-100">
+                <div class="carousel-caption h-100">
+                    <br>
+                    <br>
+                    <img class="Kh-CR-img" src="/images/Doordash.png">
+                    <br>
+                    <br>
+                    <br>
+                    <p>We cut down hiring time by months, which was huge for us. We owe that to MindHack.</p>
+                    <p><span class="Kh-color-red">M. Patino</span> <span class="Kh-color-yel">(</span>University Recruiting<span class="Kh-color-yel">)</span></p>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="carousel-item h-100">
+                <div class="carousel-caption h-100">
+                    <br>
+                    <br>
+                    <img class="Kh-CR-img" src="/images/Deliveroo.png">
+                    <br>
+                    <br>
+                    <br>
+                    <p>MindHack SkillUp received rave reviews. We started with our junior team and have now extended it to our mid-level.</p>
+                    <p><span class="Kh-color-red">A. Coleman</span> <span class="Kh-color-yel">(</span>Senior Recruiting Manager<span class="Kh-color-yel">)</span></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div id="Kh-CR-sp"></div>
+    <div id="Kh-CR-choi" class="row d-flex justify-content-center">
+        <div class="Kh-CR-bor col-12 col-lg-6">
+            <div class="w-100 h-100 d-flex flex-column align-items-center">
+                <br>
+                <br>
+                <br>
+                <h3 class="mb-3">For Developers</h3>
+                <p class="mb-0">
+                    Over 26 millions developers have joined the MindHack Community to learn and certify their skills, practice interviewing, and discover relevant jobs.
+                </p>
+                <button type="button" class="Kh-CR-btn-r btn">Join the Community</button>
+            </div>
+        </div>
+        <div class="Kh-CR-bor col-12 col-lg-6">
+            <div class="w-100 h-100 d-flex flex-column align-items-center">
+                <br>
+                <br>
+                <br>
+                <h3 class="mb-3">For Companies</h3>
+                <p class="mb-0">
+                    Thousands of companies have embraced the new way to hire and upskill developers across roles and throughout their careers.
+                </p>
+                <button type="button" class="Kh-CR-btn-y btn">Start a Free Trial</button>
+            </div>
+        </div>
+    </div>
+    <!-- /Company review -->
+    <!-- Summary -->
+    <div id="Kh-sum-br"></div>
+    <footer id="Kh-sum" class="pt-5 pb-4">
+        <div class="container text-start">
+            <div class="row text-start">
+                <div class="col-6 col-lg-2">
+                    <h6 class="mb-2 font-weight-bold ">PRODUCTS</h6>
+                    <p><a class="Kh-select text-decoration-none">Screen</a></p>
+                    <p><a class="Kh-select text-decoration-none">Interview</a></p>
+                    <p><a class="Kh-select text-decoration-none">Engage</a></p>
+                    <p><a class="Kh-select text-decoration-none">SkillUp</a></p>
+                    <p><a class="Kh-select text-decoration-none">Certified assessments</a></p>
+                    <p><a class="Kh-select text-decoration-none">Plagiarism detection</a></p>
+                    <p><a class="Kh-select text-decoration-none">Real-world questions</a></p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="mb-2 font-weight-bold">SOLUTIONS</h6>
+                    <p><a class="Kh-select text-decoration-none">Set up your skills strategy</a></p>
+                    <p><a class="Kh-select text-decoration-none">Showcase your tech brand</a></p>
+                    <p><a class="Kh-select text-decoration-none">Optimize your hiring process</a></p>
+                    <p><a class="Kh-select text-decoration-none">Mobilize your internal talent</a></p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="mb-2 font-weight-bold">RESOURCES</h6>
+                    <p><a class="Kh-select text-decoration-none">Blog</a></p>
+                    <p><a class="Kh-select text-decoration-none">Customer stories</a></p>
+                    <p><a class="Kh-select text-decoration-none">Roles directory</a></p>
+                    <p><a class="Kh-select text-decoration-none">Partners</a></p>
+                    <p><a class="Kh-select text-decoration-none">Integrations</a></p>
+                    <p><a class="Kh-select text-decoration-none">What's new</a></p>
+                    <p><a class="Kh-select text-decoration-none">Writing</a></p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="mb-2 font-weight-bold">ABOUT US</h6>
+                    <p><a class="Kh-select text-decoration-none">Careers</a></p>
+                    <p><a class="Kh-select text-decoration-none">Status</a></p>
+                    <p><a class="Kh-select text-decoration-none">Trust</a></p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="mb-2 font-weight-bold">GET STARTED</h6>
+                    <p><a class="Kh-select text-decoration-none">Pricing</a></p>
+                    <p><a class="Kh-select text-decoration-none">Free Trial</a></p>
+                    <p><a class="Kh-select text-decoration-none">Request a demo</a></p>
+                    <p><a class="Kh-select text-decoration-none">Product support</a></p>
+                    <p><a class="Kh-select text-decoration-none">For developers</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Summary -->
+    <!-- Footer -->
+    <div id="Kh-foot" class="container-fluid py-4 px-5">
+        <footer class="row align-items-center">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center text-center mb-3 mb-lg-0">
+                <img id="Kh-foot-logo" src="/images/MindHack_logo_foot.png" class="ms-3 mb-1">
+                <span class="small">© 2026 MindHack</span>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
+                <ul class="nav list-unstyled d-flex small">
+                    <li class="mx-2"><a class="Kh-pri-link text-decoration-none">Privacy Policy</a></li>
+                    <li class="mx-2"><a class="Kh-pri-link text-decoration-none">Terms of Service</a></li>
+                    <li class="mx-2"><a class="Kh-pri-link text-decoration-none">Cookies</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- /Footer -->
+    <!-- Up button -->
+    <a id="Kh-back-to-top" class="Kh-font-Jet-Bold" href="#">
+        ↑
+    </a>
+    <!-- Up button -->
+</body>
+</html>
