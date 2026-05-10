@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        h1 {
+            justify-self: center;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-size: 50px;
+        }
+        #inpcity {
+            width: 350px;
+            height: 30px;
+            display: flex;
+            justify-self: center;
+        }
+        #gogo {
+            width: 360px;
+            height: 40px;
+            display: flex;
+            justify-self: center;
+            font-size: large;
+            background-color: rgb(62, 62, 255);
+            cursor: pointer;
+        }
+    </style>
+    <h1>Weather App</h1>
+    <form>
+        <input id="inpcity" type="text" placeholder="Enter City"><br>
+        <input id="gogo" type="submit" value="Check">
+    </form>
+    <script>
+        async function getWeather(city) {
+            const apiKey = 'c54a28745a19fb28e8d1849950869abb';
+            const url = `https://openweathermap.org{city}&appid=${apiKey}&units=metric&lang=vi`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Lỗi: ${response.status} - ${response.statusText}`);
+                }
+                const data = await response.json();
+                console.log(`Thời tiết tại ${data.name}:`);
+                console.log(`- Nhiệt độ: ${data.main.temp}°C`);
+                console.log(`- Cảm giác như: ${data.main.feels_like}°C`);
+                console.log(`- Mô tả: ${data.weather[0].description}`);
+                
+            } catch (error) {
+                console.error("Không thể lấy dữ liệu:", error.message);
+            }
+        }
+        const getWeather = document.querySelector("#inpcity")
+        getWeather(getWeather.value.trim());
+    </script>
+</body>
+</html>
