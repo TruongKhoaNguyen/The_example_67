@@ -11,56 +11,6 @@ html {
 a {
     cursor: pointer;
 }
-/* custom fonts */
-@font-face {
-    font-family: 'Montserrat-Medium';
-    src: url('/fonts/Montserrat-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-.Kh-font-Mont-Med {
-    font-family: 'Montserrat-Medium';
-}
-@font-face {
-    font-family: 'JetBrainsMono-Bold';
-    src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-.Kh-font-Jet-Bold {
-    font-family: 'JetBrainsMono-Bold';
-}
-@font-face {
-    font-family: 'JetBrainsMono-Regular';
-    src: url('/fonts/JetBrainsMonoNL-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-.Kh-font-Jet-Reg {
-    font-family: 'JetBrainsMono-Regular';
-}
-@font-face {
-    font-family: 'BlockBlueprint';
-    src: url('/fonts/BlockBlueprint.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-.Kh-font-Block {
-    font-family: 'BlockBlueprint';
-}
-/* colors */
-.Kh-color-red {
-    color: #ff0000;
-}
-.Kh-color-yel {
-    color: #ffc000;
-}
-.Kh-color-whi {
-    color: whitesmoke;
-}
-.Kh-color-brw {
-    color: #1f1514;
-}
 
 /********************************************** First NavBar **********************************************/
 #Kh-fnav {
