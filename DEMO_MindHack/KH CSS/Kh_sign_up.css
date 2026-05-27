@@ -1,0 +1,63 @@
+/********** Sign up **********/
+#Khsu-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 640px;
+}
+    .Khsu-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 60px;
+    }
+        .Khsu-name {
+            margin-top: 24px;
+        }
+        .Khsu-email,
+        .Khsu-pass,
+        .Khsu-con-pass {
+            margin-top: 18px;
+        }
+        .Khsu-name input,
+        .Khsu-email input,
+        .Khsu-pass input,
+        .Khsu-con-pass input {
+            border: 1px solid black;
+        }
+        .Khsu-name input:hover,
+        .Khsu-email input:hover,
+        .Khsu-pass input:hover,
+        .Khsu-con-pass input:hover {
+            box-shadow: 0 0 0 0.07rem black;
+            outline: none;
+        }
+        .Khsu-name input:focus {
+            border-color: #ff0000;
+            box-shadow: 0 0 0 0.25rem #ff7272;
+        }
+        .Khsu-email input:focus,
+        .Khsu-pass input:focus,
+        .Khsu-con-pass input:focus {
+            border-color: #ffc000;
+            box-shadow: 0 0 0 0.25rem #f7d36a;
+        }
+        .Khsu-button {
+            border-color: #ff0000;
+            color: #ff0000;
+            display: block;
+            width: 100%;
+        }
+        .Khsu-button:hover {
+            background-color: #ff0000;
+            border-color: #ff0000;
+            color: whitesmoke;
+        }
+    .Khsu-pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
