@@ -6,10 +6,108 @@
     <title>MindHack - Sign Up</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../KH CSS/Kh_mainstyles.css">
+    <link rel="stylesheet" href="../KH CSS/Kh_styles.css">
     <link rel="stylesheet" href="../KH CSS/Kh_sign_up.css">
     <link rel="icon" type="image/png" sizes="180x180" href="../images/Web_icon.png">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav id="Kh-fnav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./MindHack.html">
+                <img id="Kh-fnav-img" src="../images/MindHack_logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="Kh-font-Mont-Med navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="Kh-no-caret nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="d-flex">
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Products</span>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Screen</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Interview</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Engage</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ SkillUp</a>
+                                </div>
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Features</span>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ Certified Assessments</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ Plagiarism Detection</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ Real-World Questions</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ Integrations</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ AI Add-on</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="Kh-no-caret nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="d-flex">
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">What We Do</span>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Set Up Your Skills Strategy</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Showcase Your Tech Brand</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Optimize Your Hiring Process</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Mobilize Your Internal Talent</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ AI Data Services</a>
+                                </div>
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Use Cases</span>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ Remote Hiring</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ University Hiring</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="Kh-no-caret nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="d-flex">
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Learn</span>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Blog</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Roles Directory</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Resources Library</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Customer Stories</a>
+                                    <a class="Kh-drop-r Kh-click dropdown-item" href="./MH_construct.html">→ Developer Skills Report</a>
+                                </div>
+                                <div>
+                                    <span class="Kh-drop-first dropdown-item-text">Product Help</span>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ What's New</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ Partners</a>
+                                    <a class="Kh-drop-y Kh-click dropdown-item" href="./MH_construct.html">✧ Support</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./MH_construct.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./MH_construct.html">Human Data</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button id="Tr-login-button" class="Kh-trans Kh-font-Mont-Med btn btn-light" type="button">Log In</button>
+                    <button id="Tr-request-button" class="Kh-font-Mont-Med Kh-btn-out-cus-r btn" type="button">Request Demo</button>
+                    <button id="Tr-signup-button" class="Kh-font-Mont-Med Khsu-triggered btn" type="button">Create a free account</button>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- /Navbar -->
+    <!-- Main Sign Up -->
     <div id="Khsu-main">
         <div class="Khsu-form">
             <h1 class="Kh-font-Jet-Bold" style="word-spacing: -5.6px;">
@@ -35,11 +133,19 @@
                 <div style="margin-top: 18px; width: 100%;">
                     <input type="submit" class="Khsu-button Kh-font-Mont-Med btn" value="Sign up">
                 </div>
+                <div style="width: 100%;"><label>Or sign up with...</label></div>
+                <div style="margin-top: 18px; width: 100%;">
+                    <button type="button" class="Khsu-Google btn">
+                        <img src="../images/Google_su_icon.png" style="width: 80px; height: auto;">
+                    </button>
+                </div>
             </form>
         </div>
         <div class="Khsu-pic">
             <img src="../images/Workspace_pic.png">
         </div>
     </div>
+    <!-- /Main Sign Up -->
+    <script src="../TR JS/main_navbar.js"></script>
 </body>
 </html>
