@@ -33,7 +33,7 @@ body {
         .Khsu-email,
         .Khsu-pass,
         .Khsu-con-pass {
-            margin-top: 18px;
+            margin-top: 10px;
         }
         .Khsu-name input,
         .Khsu-email input,
@@ -69,7 +69,7 @@ body {
             border-color: #ff0000;
             color: whitesmoke;
         }
-        label {
+        #Khsu-Or-suw label {
             display: flex;
             justify-self: center;
             margin-top: 10px;
