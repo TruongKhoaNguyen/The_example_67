@@ -1,0 +1,44 @@
+/********** Sign up choice **********/
+#Khsuch-Logo {
+    height: 1.2cm;
+    width: auto;
+    z-index: 20;
+    margin-top: 22px;
+    margin-left: 2px;
+}
+    #Khsuch-Logo img {
+        width: auto;
+        height: 1.2cm;
+    }
+
+.Khsuch-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 640px;
+    width: 72%;
+    padding-left: 120px;
+}
+    #Khsuch-first-hq {
+        margin-top: 102px;
+        font-size: 47px;
+        font-weight: bold;
+    }
+    #Khsuch-sec-hq {
+        font-size: 47px;
+        font-weight: bold;
+    }
+    label {
+        margin-top: 17px;
+        margin-left: 3px;
+        color: rgb(92, 92, 92);
+    }
+.Khsuch-pic {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    width: 28%;
+    height: 640px;
+}
