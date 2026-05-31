@@ -1,24 +1,24 @@
 /********** Log in choice **********/
 
-.Lich-first {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 640px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+.Lich-first,
 .Lich-second {
     position: absolute;
     top: 0;
-    right: 0;
     width: 50%;
     height: 640px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 0 65px;
+}
+
+h2 {
+    margin-top: 250px;
+}
+p {
+    margin-top: 25px;
+    font-size: larger;
+}
+button {
+    margin-top: 20px;
+    height: 45px;
+    width: 90px;
 }
