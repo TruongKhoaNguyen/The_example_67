@@ -37,6 +37,13 @@
         font-size: x-large;
         width: 400px;
     }
+    .Khsuch-button:active {
+        background-color: var(--bs-btn-bg) !important;
+        border-color: var(--bs-btn-border-color) !important;
+        box-shadow: none !important;
+        transform: none !important;
+        border-left-color: inherit !important;
+    }
 .Khsuch-pic {
     position: absolute;
     top: 0;

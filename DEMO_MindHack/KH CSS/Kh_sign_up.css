@@ -28,12 +28,12 @@ body {
         padding: 0 60px;
     }
         .Khsu-name {
-            margin-top: 10.2px;
+            margin-top: 4.5px;
         }
         .Khsu-email,
         .Khsu-pass,
         .Khsu-con-pass {
-            margin-top: 10px;
+            margin-top: 7px;
         }
         .Khsu-name input,
         .Khsu-email input,
@@ -61,7 +61,6 @@ body {
         .Khsu-button {
             border-color: #ff0000;
             color: #ff0000;
-            display: block;
             width: 100%;
         }
         .Khsu-button:hover {
@@ -76,13 +75,24 @@ body {
             color: gray;
         }
         .Khsu-Google {
-            margin-top: -3px;
-            display: block;
+            margin-top: -5px;
             width: 100%;
             border-color: black;
         }
         .Khsu-Google:hover {
             box-shadow: 0 0 0 0.15rem black;
+        }
+        #By-sign-up {
+            font-size: 13px;
+            margin-top: 11px;
+            text-align: center;
+        }
+        #By-sign-up a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        #By-sign-up a:hover {
+            text-decoration: underline;
         }
     .Khsu-pic {
         display: flex;
