@@ -33,6 +33,10 @@
         margin-left: 3px;
         color: rgb(92, 92, 92);
     }
+    .Khsuch-button {
+        font-size: x-large;
+        width: 520px;
+    }
 .Khsuch-pic {
     position: absolute;
     top: 0;
