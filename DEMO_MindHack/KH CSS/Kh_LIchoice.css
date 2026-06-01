@@ -1,13 +1,45 @@
 /********** Log in choice **********/
+#Khlich-fnav {
+    z-index: 100;
+}
 
-.Lich-first,
-.Lich-second {
+.Khlich-first,
+.Khlich-second {
     position: absolute;
     top: 0;
     width: 50%;
     height: 640px;
     text-align: center;
     padding: 0 65px;
+}
+.Khlich-first {
+    left: 0;
+}
+    .Khlich-first button:hover {
+        background-color: #ff0000;
+        box-shadow: 0 0 0 0.25rem #ff7272;
+        border-color: #ff0000;
+    }
+.Khlich-second {
+    right: 0;
+}
+    .Khlich-second button:hover {
+        background-color: #ffc000;
+        box-shadow: 0 0 0 0.25rem #f7d36a;
+        border-color: #ffc000;
+        color: black;
+    }
+
+#Khlich-middle-line {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    width: 2px;
+    height: 643px;
+    display: flex;
+    justify-self: center;
+    background-color: #ff0000;
+    border-bottom: 320px solid #ffc000;
 }
 
 h2 {
@@ -17,8 +49,13 @@ p {
     margin-top: 25px;
     font-size: larger;
 }
-button {
+.Khlich-first button,
+.Khlich-second button {
     margin-top: 20px;
     height: 45px;
     width: 90px;
+}
+
+@media (max-width: 992px) {
+    
 }
