@@ -30,18 +30,6 @@
         color: black;
     }
 
-#Khlich-middle-line {
-    position: absolute;
-    top: 0;
-    z-index: 20;
-    width: 2px;
-    height: 643px;
-    display: flex;
-    justify-self: center;
-    background-color: #ff0000;
-    border-bottom: 320px solid #ffc000;
-}
-
 h2 {
     margin-top: 250px;
 }
