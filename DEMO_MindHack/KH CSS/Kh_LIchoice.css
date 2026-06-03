@@ -10,12 +10,15 @@
     width: 50%;
     height: 640px;
     text-align: center;
-    padding: 0 65px;
+    padding: 0 clamp(2px,3.39vw,65px);
+    background-color: #ffffff;
+    z-index: 1;
 }
 .Khlich-first {
     left: 0;
 }
-    .Khlich-first button:hover {
+    .Khlich-first button:hover,
+    .Khlich-first-car button:hover {
         background-color: #ff0000;
         box-shadow: 0 0 0 0.25rem #ff7272;
         border-color: #ff0000;
@@ -23,12 +26,28 @@
 .Khlich-second {
     right: 0;
 }
-    .Khlich-second button:hover {
+    .Khlich-second button:hover,
+    .Khlich-second-car button:hover {
         background-color: #ffc000;
         box-shadow: 0 0 0 0.25rem #f7d36a;
         border-color: #ffc000;
         color: black;
     }
+
+#Khlich-signup-need {
+    position: absolute;
+    justify-self: center;
+    text-align: center;
+    margin-top: 480px;
+    z-index: 4;
+}
+#Khlich-signup-need a {
+    text-decoration: none;
+    color: #ff0000;
+}
+#Khlich-signup-need a:hover {
+    text-decoration: underline;
+}
 
 h2 {
     margin-top: 250px;
@@ -38,12 +57,24 @@ p {
     font-size: larger;
 }
 .Khlich-first button,
-.Khlich-second button {
+.Khlich-second button,
+.Khlich-first-car button,
+.Khlich-second-car button {
     margin-top: 20px;
     height: 45px;
     width: 90px;
+    z-index: 6;
 }
 
-@media (max-width: 992px) {
-    
+/* Car */
+.Khlich-car {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 640px;
 }
+    .Khlich-first-car,
+    .Khlich-second-car {
+        text-align: center;
+        padding: 0 clamp(65px,11.72vw,225px);
+    }
