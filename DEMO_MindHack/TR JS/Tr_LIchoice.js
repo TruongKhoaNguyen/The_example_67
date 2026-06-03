@@ -49,12 +49,14 @@ function Inscreen(obj) {
             <div class="Khlich-second">
                 <h2>For <span style="font-style: italic; color: #ffc000;">Developers</span></h2>
                 <p>
-                    Join over 26 million developers, practice coding skills, prepare for interviews, and get hired.<br>
+                    Join over 26 million developers, practice coding skills, prepare for interviews, and get hired.
                 </p>
                 <button class="btn-dark btn">Login</button>
             </div>
         `;
         carouShow.innerHTML = "";
+        window.addEventListener("load",sameLineButton);
+        window.addEventListener("resize",sameLineButton);
     }
 }
 
