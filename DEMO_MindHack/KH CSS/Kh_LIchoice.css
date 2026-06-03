@@ -76,5 +76,5 @@ p {
     .Khlich-first-car,
     .Khlich-second-car {
         text-align: center;
-        padding: 0 clamp(65px,11.72vw,215px);
+        padding: 0 clamp(65px,11.72vw,225px);
     }
