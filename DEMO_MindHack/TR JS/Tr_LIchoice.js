@@ -1,10 +1,12 @@
 const theScreenTest = window.matchMedia("(max-width: 992px)");
 const splited = document.querySelector("#Tr-Show-Lich");
 const carouShow = document.querySelector(".Tr-Lich-Car");
-
+// 
 Inscreen(theScreenTest);
 theScreenTest.addEventListener("change",Inscreen);
-
+window.addEventListener("load",sameLineButton);
+window.addEventListener("resize",sameLineButton);
+// 
 function Inscreen(obj) {
     if (obj.matches) {
         splited.innerHTML = "";
@@ -34,8 +36,13 @@ function Inscreen(obj) {
                 <span class="visually-hidden">Next</span>
             </button>
         `;
-        window.addEventListener("load",sameLineButton);
-        window.addEventListener("resize",sameLineButton);
+        //
+        document.querySelector(".Khlich-first-car button").onclick = () => {
+            location.href = "../MH HTML/MH_login_Com.html";
+        };
+        document.querySelector(".Khlich-second-car button").onclick = () => {
+            location.href = "../MH HTML/MH_login_Dev.html";
+        };
     }
     else {
         splited.innerHTML = `
@@ -55,8 +62,13 @@ function Inscreen(obj) {
             </div>
         `;
         carouShow.innerHTML = "";
-        window.addEventListener("load",sameLineButton);
-        window.addEventListener("resize",sameLineButton);
+        //
+        document.querySelector(".Khlich-first button").onclick = () => {
+            location.href = "../MH HTML/MH_login_Com.html";
+        };
+        document.querySelector(".Khlich-second button").onclick = () => {
+            location.href = "../MH HTML/MH_login_Dev.html";
+        };
     }
 }
 

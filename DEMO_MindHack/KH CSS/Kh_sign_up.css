@@ -82,16 +82,16 @@ body {
         .Khsu-Google:hover {
             box-shadow: 0 0 0 0.15rem black;
         }
-        #By-sign-up {
+        #Khsu-By-sign-up {
             font-size: 13px;
             margin-top: 11px;
             text-align: center;
         }
-        #By-sign-up a {
+        #Khsu-By-sign-up a {
             color: #ff0000;
             text-decoration: none;
         }
-        #By-sign-up a:hover {
+        #Khsu-By-sign-up a:hover {
             text-decoration: underline;
         }
     .Khsu-pic {

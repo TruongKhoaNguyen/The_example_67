@@ -51,3 +51,7 @@
 .Kh-color-blk {
     color: black;
 }
+/*  */
+label:hover {
+    cursor: text;
+}
