@@ -8,11 +8,15 @@ window.onload = initGoogleLibrary;
 
 document.querySelector("#Tr-First-name").addEventListener("blur",(self) => {
     if (document.activeElement !== self.currentTarget)
-        self.currentTarget.value = toTitle(self.currentTarget.value);
+        self.currentTarget.value = toTitle(self.currentTarget.value).trim();
 });
 document.querySelector("#Tr-Last-name").addEventListener("blur",(self) => {
     if (document.activeElement !== self.currentTarget)
-        self.currentTarget.value = toTitle(self.currentTarget.value);
+        self.currentTarget.value = toTitle(self.currentTarget.value).trim();
+});
+document.querySelector("#Tr-Email").addEventListener("blur",(self) => {
+    if (document.activeElement !== self.currentTarget)
+        self.currentTarget.value = self.currentTarget.value.trim();
 });
 GoogleButton.onclick = () => {
     if (tokenClient)
@@ -22,26 +26,32 @@ GoogleButton.onclick = () => {
 };
 document.querySelector("#Tr-Input").addEventListener("submit",(event) => {
     event.preventDefault();
-
+    //
     const firstName = document.querySelector("#Tr-First-name").value.trim();
     const lastName = document.querySelector("#Tr-Last-name").value.trim();
     const email = document.querySelector("#Tr-Email").value.trim();
     const password = document.querySelector("#Tr-Password").value;
     const confirmPassword = document.querySelector("#Tr-Confirm-pass").value;
     let fullName = `${firstName} ${lastName}`;
-
+    // 
     if (!firstName || !lastName || !email || !password) {
         alert("Please fill in all required fields.");
         return;
     }
-    if (
-        !(/^[a-zA-Z]$/).test(fullName) ||
-        !(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email) ||
-        !(/^[a-zA-Z0-9 ]$/).test(password)
-    ) {
-        alert("Information error.");
+    //
+    if (!(/^[a-zA-Z ]+$/).test(fullName)) {
+        alert("Name error.");
         return;
     }
+    if (!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email)) {
+        alert("Email error.");
+        return;
+    }
+    if (password.includes(" ")) {
+        alert("Password error.");
+        return;
+    }
+    // 
     if (fullName.length > 50) {
         alert("Name is too long.");
         return;
@@ -54,6 +64,7 @@ document.querySelector("#Tr-Input").addEventListener("submit",(event) => {
         alert("Email is already registered.");
         return;
     }
+    //
     if (password.length < 6) {
         alert("Password should be at least 6 characters.");
         return;
@@ -62,6 +73,7 @@ document.querySelector("#Tr-Input").addEventListener("submit",(event) => {
         alert("Password is too long.");
         return;
     }
+    //
     if (password !== confirmPassword) {
         alert("Passwords do not match.");
         return;
@@ -103,7 +115,7 @@ function fetchGoogleUserData(accessToken) {
     .then((response) => response.json())
     .then((data) => {
         const userEnter = {
-            name: `${data.given_name} ${data.family_name}`.trim(),
+            name: charactersFixed(`${data.given_name} ${data.family_name}`.trim()),
             email: data.email,
             pass: '',
         };
@@ -116,4 +128,11 @@ function fetchGoogleUserData(accessToken) {
 }
 function toTitle(str) {
     return str.toLowerCase().replace(/(^|\s)\S/g,(char) => char.toUpperCase());
+}
+function charactersFixed(str) {
+    return str
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g,'')
+        .replace(/đ/g, 'd')
+        .replace(/Đ/g, 'D');
 }
