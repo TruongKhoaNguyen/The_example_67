@@ -9,3 +9,4 @@ function Inscreen(obj) {
     else
         document.querySelector("#Khlicom-Logo").innerHTML = "";
 }
+// 

@@ -115,28 +115,28 @@
                 <span class="Kh-color-red">Start</span> <span class="Kh-color-yel">your free trial</span>
             </h1>
             <p style="margin-top: -7px;">No credit card required. Sign up with your work email.</p>
-            <form class="row">
+            <form id="Tr-Input" class="row">
                 <div class="Khsu-name col">
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    <input id="Tr-First-name" type="text" class="form-control" placeholder="First name" aria-label="First name">
                 </div>
                 <div class="Khsu-name col">
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    <input id="Tr-Last-name" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                 </div>
                 <div class="Khsu-email input-group flex-nowrap">
-                    <input type="text" class="form-control" placeholder="Email address" aria-describedby="addon-wrapping">
+                    <input id="Tr-Email" type="text" class="form-control" placeholder="Email address" aria-describedby="addon-wrapping">
                 </div>
                 <div class="Khsu-pass input-group flex-nowrap">
-                    <input type="text" class="form-control" placeholder="Password" aria-describedby="addon-wrapping">
+                    <input id="Tr-Password" type="password" class="form-control" placeholder="Password" aria-describedby="addon-wrapping">
                 </div>
                 <div class="Khsu-con-pass input-group flex-nowrap">
-                    <input type="text" class="form-control" placeholder="Confirm Password" aria-describedby="addon-wrapping">
+                    <input id="Tr-Confirm-pass" type="password" class="form-control" placeholder="Confirm Password" aria-describedby="addon-wrapping">
                 </div>
                 <div style="margin-top: 7px; width: 100%;">
                     <input type="submit" class="Khsu-button Kh-font-Mont-Med btn" value="Sign up">
                 </div>
                 <div id="Khsu-Or-suw" style="width: 100%;"><label>Or sign up with...</label></div>
                 <div style="margin-top: 18px; width: 100%;">
-                    <button type="button" class="Khsu-Google btn">
+                    <button id="Tr-Google-button" type="button" class="Khsu-Google btn">
                         <img src="../images/Google_btn_icon.png" style="width: 80px; height: auto;">
                     </button>
                 </div>
@@ -151,6 +151,8 @@
         </div>
     </div>
     <!-- /Main Sign Up -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="../TR JS/Tr_main_navbar.js"></script>
+    <script src="../TR JS/Tr_signup.js"></script>
 </body>
 </html>
