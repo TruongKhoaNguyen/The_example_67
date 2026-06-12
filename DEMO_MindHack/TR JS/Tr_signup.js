@@ -1,6 +1,7 @@
+const mainForm = document.querySelector("#Tr-Input");
 const GoogleButton = document.querySelector("#Tr-Google-button");
 const RegisterAccountList = JSON.parse(localStorage.getItem("registeredData")) || [];
-let tokenClient;
+let tokenClient = null;
 //
 
 window.onload = initGoogleLibrary;
@@ -24,7 +25,7 @@ GoogleButton.onclick = () => {
     else
         alert("Something went wrong, please try again.");
 };
-document.querySelector("#Tr-Input").addEventListener("submit",(event) => {
+mainForm.addEventListener("submit",(event) => {
     event.preventDefault();
     //
     const firstName = document.querySelector("#Tr-First-name").value.trim();
@@ -89,7 +90,7 @@ document.querySelector("#Tr-Input").addEventListener("submit",(event) => {
     location.href = "../MH HTML/MH_SUchoice.html";
 });
 
-// AI !
+// AI
 function initializeGoogleSignIn() {
     tokenClient = google.accounts.oauth2.initTokenClient({
         client_id: '629110805682-fp32ouk8ts4kc8n5s9jr0t2hn58um3se.apps.googleusercontent.com',
@@ -115,11 +116,12 @@ function fetchGoogleUserData(accessToken) {
     .then((response) => response.json())
     .then((data) => {
         const userEnter = {
-            name: charactersFixed(`${data.given_name} ${data.family_name}`.trim()),
+            name: toTitle(charactersFixed(`${data.given_name} ${data.family_name}`.trim())),
             email: data.email,
             pass: '',
         };
-        RegisterAccountList.push(userEnter);
+        if (!RegisterAccountList.some((i) => i.email == data.email))
+            RegisterAccountList.push(userEnter);
         localStorage.setItem("registeredData",JSON.stringify(RegisterAccountList));
         localStorage.setItem("currentUse",JSON.stringify(userEnter));
         location.href = "../MH HTML/MH_SUchoice.html";

@@ -19,12 +19,12 @@
             <span class="Kh-color-blk" style="margin-left: -2.5px; white-space: nowrap;">Login to your account</span>
         </h1>
         <p>It's nice to see you again. Ready to code?</p>
-        <form class="row">
+        <form id="Tr-Input" class="row">
             <div class="Khlidev-email input-group flex-nowrap">
-                <input type="text" class="form-control" placeholder="Your email" aria-describedby="addon-wrapping">
+                <input id="Tr-Email" type="text" class="form-control" placeholder="Your email" aria-describedby="addon-wrapping">
             </div>
             <div class="Khlidev-pass input-group flex-nowrap">
-                <input type="text" class="form-control" placeholder="Your password" aria-describedby="addon-wrapping">
+                <input id="Tr-Password" type="text" class="form-control" placeholder="Your password" aria-describedby="addon-wrapping">
             </div>
             <div style="margin-top: 12px; width: 100%;">
                 <input type="submit" class="Khlidev-button Kh-font-Mont-Med btn" value="Log in">
@@ -33,7 +33,7 @@
                 <label>───────────&emsp;Or&emsp;───────────</label>
             </div>
             <div style="margin-top: 18px; width: 100%;">
-                <button type="button" class="Khlidev-Google btn">
+                <button id="Tr-Google-button" type="button" class="Khlidev-Google btn">
                     <img src="../images/Google_btn_icon.png" style="width: 80px; height: auto;">
                 </button>
             </div>
@@ -45,6 +45,7 @@
         </form>
     </div>
     <!--  -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="../TR JS/Tr_login_Dev.js"></script>
 </body>
 </html>
