@@ -13,30 +13,64 @@
 </head>
 <body>
     <!-- Dev nav -->
-    <nav id="Khlidev-fnav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav id="Khdev-fnav" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="./MindHack.html">
-                <img id="Kh-fnav-img" src="../images/MindHack_logo.png">
+                <img id="Kh-fnav-img" src="../images/MindHack_logo_foot.png">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="Kh-font-Mont-Med navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="Kh-font-Mont-Med navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
                     <li class="nav-item">
-                        <a class="nav-link" href="./MH_devmain_menu.html">Prepare</a>
+                        <div style="width: 30px; height: 100%; background-color: white; padding: 0 13px; background-clip: content-box;"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./MH_construct.html">Certify</a>
+                        <a class="Khdev-nav-link nav-link active Kh-color-whi" href="./MH_devmain_menu.html">Prepare</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./MH_construct.html">Compete</a>
+                        <a class="Khdev-nav-link nav-link Kh-color-whi" href="./MH_construct.html">Certify</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="Khdev-nav-link nav-link Kh-color-whi" href="./MH_construct.html">Compete</a>
                     </li>
                 </ul>
-                <span class="navbar-text">
-                    <button id="Tr-login-button" class="Kh-trans Kh-font-Mont-Med btn btn-light" type="button">Log In</button>
-                    <button id="Tr-request-button" class="Kh-font-Mont-Med Kh-btn-out-cus-r btn" type="button">Request Demo</button>
-                    <button id="Tr-signup-button" class="Kh-font-Mont-Med Kh-btn-out-cus-y btn" type="button">Create a free account</button>
+                <span class="navbar-text d-flex" style="gap: 14px;">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Profile
+                        </button>
+                        <ul class="dropdown-menu" style="width: 250px;">
+                            <!-- Profile Header Section -->
+                            <li class="px-3 py-2">
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/40" alt="Profile" class="rounded-circle me-2" width="40" height="40">
+                                <div>
+                                <div class="fw-bold">John Doe</div>
+                                <small class="text-muted">john.doe@example.com</small>
+                                </div>
+                            </div>
+                            </li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            <!-- Menu Options -->
+                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            <!-- Log Out -->
+                            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                    <button class="Khdev-trans btn btn-light" type="button">
+                        <img src="../images/Bell_nav.png" style="width: 15px; height: auto;">
+                    </button>
+                    <button class="Khdev-trans btn btn-light" type="button" >
+                        <img src="../images/More_nav.png" style="width: 15px; height: auto;">
+                    </button>
                 </span>
             </div>
         </div>

@@ -1,5 +1,19 @@
 /********** Developer main MENU **********/
-#Khlidev-fnav {
-    background-color: brown !important;
+#Khdev-fnav {
+    background-color: rgb(228, 65, 65) !important;
     z-index: 100;
 }
+    .Khdev-nav-link:hover {
+        color: whitesmoke;
+    }
+    .Khdev-nav-link.active {
+        color: whitesmoke !important;
+    }
+    .Khdev-trans {
+        background-color: rgb(228, 65, 65);
+        border: none;
+    }
+    .Khdev-trans:hover {
+        background-color: rgb(225,255,255,0.2);
+        border: none;
+    }
