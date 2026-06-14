@@ -101,7 +101,7 @@ function fetchGoogleUserData(accessToken) {
             RegisterAccountList.push(userEnter);
         localStorage.setItem("registeredData",JSON.stringify(RegisterAccountList));
         localStorage.setItem("currentUse",JSON.stringify(userEnter));
-        location.href = "../MH HTML/MH_commain_menu.html";
+        location.href = "../MH HTML/MH_construct.html";
     })
     .catch((error) => console.error('Error fetching Google data:',error));
 }
